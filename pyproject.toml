@@ -9,6 +9,7 @@ dependencies = [
  "argparse>=1.4.0",
  "click>=8.2.1",
  "litestar[standard]>=2.16.0",
+ "structlog>=25.4.0",
 ]
 
 [dependency-groups]
