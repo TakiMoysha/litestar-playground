@@ -6,3 +6,6 @@ dev *ARGS:
 
 litestar-create-certificate:
   uv run litestar run --ssl-certfile=server.crt --ssl-keyfile=server.key --create-self-signed-cert
+
+test *ARGS:
+  uv run pytest {{ARGS}}
