@@ -18,4 +18,4 @@ def create_app() -> Litestar:
     )
 
 
-asgi_application = create_app()
+def create_inertia_app() -> Litestar: ...

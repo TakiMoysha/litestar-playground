@@ -5,7 +5,7 @@ def run_cli() -> None:
 
     workdir_path = Path(__file__).parent.parent.resolve()
     sys.path.append(str(workdir_path))
-    os.environ.setdefault("LITESTAR_APP", "app.asgi:asgi_application")
+    os.environ.setdefault("LITESTAR_APP", "app.asgi:create_app")
 
     try:
         from litestar.__main__ import run_cli as run_litestar_cli
